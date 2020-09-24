@@ -8,6 +8,7 @@ namespace ApiBoilerPlate.Infrastructure.Extensions
 {
     public static class ServiceRegistrationExtension
     {
+        //ADD all services in Installers folder
         public static void AddServicesInAssembly(this IServiceCollection services, IConfiguration configuration)
         {
             var appServices = typeof(Startup).Assembly.DefinedTypes
